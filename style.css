@@ -1,0 +1,18 @@
+h1,
+p {
+  font-family: Lato;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+}
+.App div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
