@@ -17,6 +17,12 @@ export default function App() {
       g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
       b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
 
+    console.log(
+      ':: original hex',
+      hex,
+      ':: invert hex',
+      '#' + padZero(r) + padZero(g) + padZero(b)
+    );
     return '#' + padZero(r) + padZero(g) + padZero(b);
   };
 
