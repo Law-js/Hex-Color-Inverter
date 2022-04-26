@@ -19,9 +19,9 @@ const App = () => {
       b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
 
     console.log(
-      ':: original hex',
-      hex,
-      ':: invert hex',
+      ':: hex',
+      '#' + hex,
+      'invert in',
       '#' + padZero(r) + padZero(g) + padZero(b)
     );
 
