@@ -29,9 +29,10 @@ const App = () => {
   };
 
   const padZero = (str: string, len: number = 2) => {
-    var zeros = new Array(len).join('0');
+    const zeros = new Array(len).join('0');
     return (zeros + str).slice(-len);
   };
+
   return (
     <div className="App">
       <div
