@@ -1,6 +1,7 @@
 import './style.css';
 import React from 'react';
-export default function App() {
+
+const App = () => {
   const invertHex = (hex: string) => {
     if (hex.indexOf('#') === 0) {
       hex = hex.slice(1);
@@ -23,6 +24,7 @@ export default function App() {
       ':: invert hex',
       '#' + padZero(r) + padZero(g) + padZero(b)
     );
+
     return '#' + padZero(r) + padZero(g) + padZero(b);
   };
 
@@ -34,24 +36,14 @@ export default function App() {
     <div className="App">
       <div
         style={{
-          width: '50%',
           height: '100vh',
-          backgroundColor: '#2b8515',
-          color: invertHex('#2b8515'),
+          backgroundColor: '#9FDAC4',
+          color: invertHex('#9FDAC4'),
         }}
       >
         Hello World !
       </div>
-      <div
-        style={{
-          width: '50%',
-          height: '100vh',
-          backgroundColor: '#903350',
-          color: invertHex('#903350'),
-        }}
-      >
-        Hello upside down world !
-      </div>
     </div>
   );
-}
+};
+export default App;
